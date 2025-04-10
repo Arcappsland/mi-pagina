@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arcappsland</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
+
+    <body>
+        <header>
+            <button><img src="../assets/encendido.svg"></button>
+
+            <h1><span>A</span><span>R</span><span>C</span><span>A</span><span>P</span><span>P</span><span>S</span><span>L</span><span>A</span><span>N</span><span>D</span></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">Lyrics</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Albums</h2>
+
+            <audio src="../assets/audios/interruptor-efecto.mp3"></audio>            
+            <div>
+                
+                <p>Actualmente he publicado 8 albums c:</p>
+            </div>
+
+            <button>ESCUCHAR AHORA</button>
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Arcappsland. Todos los derechos reservados.</p>
+        </footer> 
+        
+    </body>
+
+    <script src="../js/modoOscuro.js"></script>
+    <script>
+        const img = document.querySelector("main div img");
+
+        setInterval(() => {
+            img.style.filter = `drop-shadow(0 0 100px #${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')})`;
+        }, 1000);
+    </script>
+</html>

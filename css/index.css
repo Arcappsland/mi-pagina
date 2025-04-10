@@ -1,0 +1,69 @@
+main div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start;
+}
+
+main div img{
+    width: 90%;
+    filter: drop-shadow(0 0 10px #927878);
+    transition: filter 1s linear;
+}
+  
+
+main div p{
+    overflow-wrap: break-word;
+    text-align: justify;
+    text-align-last: left; 
+    line-height: 1.5;
+}
+
+
+@media (max-width: 12.5em) {}
+/* Móvil pequeño (S) - hasta 320px */
+@media (max-width: 20em) {}
+  
+
+
+/* Móvil medio (M) - hasta 375px */
+@media (max-width: 23.5em) {
+/* Estilos para dispositivos móviles medianos */
+}
+
+
+
+/* Móvil grande (L) - hasta 425px */
+@media (max-width: 26.5em) {
+/* Estilos para dispositivos móviles grandes */
+
+}
+
+
+
+/* Tablet - hasta 720px */
+@media (max-width: 45em) {
+main div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+main div img{width: 100%;} 
+
+}
+
+
+
+/* Desktop - pantallas grandes */
+@media (min-width: 60em) {
+/* Estilos para pantallas de escritorio */
+}
+
+
+
+
+/* Pantallas extra grandes */
+@media (min-width: 80em) {
+/* Estilos para pantallas extra grandes */  
+}  
